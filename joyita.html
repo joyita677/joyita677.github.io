@@ -33,6 +33,7 @@
   <p>Hi! I'm Joyita, the student of JGS. Say hi!</p> 
   <input id="Name" placeholder="Your name">
   <input id="Email" placeholder="Your email">
+  <input id="date" placeholder="Your date of birth">
   <input id="submit" type="submit">
   <script type="module">
     // Import the functions you need from the SDKs you need
@@ -60,6 +61,7 @@
 	const db = getDatabase(app)
 const Name = document.querySelector("#Name") 
 const Email = document.querySelector("#Email")
+const date = document.querySelector("#date")
 document.querySelector('#submit').addEventListener('click', Submit)
 	
 	
@@ -73,10 +75,12 @@ document.querySelector('#submit').addEventListener('click', Submit)
 	  set(ref(db, timestamp), {
 		  Name: Name.value,
 	      email: Email.value,
+		  date: date.value,
 	  });
 
 	  Name.value = ""
 	  Email.value = ""
+	  date.value = ""
 	}
 
 	function buildTimestamp() {
