@@ -1,0 +1,256 @@
+x<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: 'Londrina Shadow', cursive;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #290323;
+}
+div {
+  height: 350px;
+  background-size: 100% 100%;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+   font-family: "Sour Gummy", sans-serif;
+  text-align: center;
+  font-size: 75px;
+  color: #3651D6;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #8A2070;
+  margin: 0px 0 70px 0;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+p {
+  font-family: "Doto", sans-serif;
+  color: rgba(255,26,26,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(90,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(90,1000,50,1), rgba(100,70,80,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url(https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg);
+}
+.second{
+  background-image: url(https://images.immediate.co.uk/production/volatile/sites/30/2013/05/spaghetti-carbonara-382837d.jpg?quality=90&resize=556,505);
+}
+.dessert{
+  background-image: url("https://brokenovenbaking.com/wp-content/uploads/2022/04/chocolate-donuts-with-sprinkles-11-1.jpg");
+}
+.third{ 
+	background-image: url("https://unclemikesbakeshoppe.com/cdn/shop/products/ChocolateCake1200_1080x.jpg?v=1642610050");
+}
+.price {
+  float: right;
+}
+input {
+font-size: 22px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>JOYITA'S RESTAURANT</h1>
+<h2>A JAMAICA CITY EATERY</h2>
+<div class="first">
+	<input type="number" min="0" style="width: 50px" class="quantities">
+  <p>Cheese Burger <span class="price">$2.07</span><br />
+  <small> Sesame seed bun, beef patty, Any other types of cheese, lattuce, toamto slices, pickels, onions(raw or grilled), Ketchup, mustard and Maynonaise.  </small></p>
+</div>
+
+<div class="second">
+	<input type="number" min="0" style="width: 50px" class="quantities">
+  <p>Spaghetti <span class="price">$20</span><br />
+  <small>ground meat, tomatoes and tomato paste, onion, garlic and spices. . For the best Spaghetti cooked it in salt water.</small></p>
+</div>
+  
+<div class="dessert">
+	<input type="number" min="0" style="width: 50px" class="quantities">
+  <p>Chocolate donut with sprinkles <span class="price">$4</span><br />
+  <small>For dount: Flour, coca Powder,sugar,baking powder,salt,milk or buttermilk,eggs,butter or oil and vanila extract. For Chocolate Glaze: Powdered sugar,Coca powder, Milk(to adjust consistency) and Vanila Extract. For Topping: Sprinkles(colorful sugar or chocolate varieties).</small></p>
+</div> 
+
+<div class="third">
+	<input type="number" min="0" style="width: 50px" class="quantities">
+  <p>Chocolate Cake <span class="price">$15</span><br />
+  <small>all-purpose flour, sugar, cocoa powder, eggs, milk or buttermilk, oil or butter, baking powder, baking soda, vanilla, and salt. </small></p>
+  
+</div>
+<br><br>
+<br><br>
+ <input id="Name" placeholder="Your name">
+ <input id="Email" placeholder="Your email">
+ <input id="submit" type="submit">
+<br><br>
+<br><br>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCMc5e6DjSmoM3176XIHxW6e41omQvTiGw",
+    authDomain: "joyita3-71c2e.firebaseapp.com",
+    projectId: "joyita3-71c2e",
+    storageBucket: "joyita3-71c2e.firebasestorage.app",
+    messagingSenderId: "890867442629",
+    appId: "1:890867442629:web:e160827888b7d641a161ac"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+  const Name = document.querySelector("#Name") 
+  const Email = document.querySelector("#Email")
+  const prices = document.querySelectorAll(".price") 
+  document.querySelector('#submit').addEventListener('click', Submit)
+  const quantities = document.querySelectorAll(".quantities")
+  const itemsList = ["cheese Burger","Spagetti ", " Chocolate donut with sprinkles", " Chocolate Cake"]
+  
+	
+	
+	
+	
+	
+	
+	function Submit() {
+	  const timestamp = buildTimestamp()
+		let total = 0
+		let cart = { }
+
+		for  (let i=0; i<quantities.length; i=i+1) {
+		  if (quantities[i].value != "0" && quantities[i].value != "") {	
+	    	let price = prices[i].innerHTML.replace('$', '')
+		    total = total + quantities[i].value * price 
+		    cart[itemsList[i]] = parseInt(quantities[i].value) 
+		  }
+		  quantities[i].value = ""
+		}
+
+		
+	  
+	  set(ref(db, timestamp), {
+		  Name: Name.value,
+	      email: Email.value,
+	      cart: cart,
+	      totalPrice: total,
+	      paid: "not yet",
+
+	  });
+
+	  Name.value = ""
+	  Email.value = ""
+	}
+
+	function buildTimestamp() {
+	  const now = new Date();
+	  let timestamp = now.getFullYear().toString() + "/";
+	  //const month = now.toLocaleString('default', { month: 'long' });
+
+	  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+	  month = month.toString()
+	  month = addLeadingZero(month)
+	  timestamp += month + "/"; 
+
+	  let date = now.getDate().toString()
+	  date = addLeadingZero(date)
+	  timestamp += date + "/";
+
+	  let hours = now.getHours().toString()
+	  hours = addLeadingZero(hours)
+	  timestamp += hours + ":";
+
+	  let minutes = now.getMinutes().toString()
+	  minutes = addLeadingZero(minutes)
+	  timestamp += minutes + ":";
+
+	  let seconds = now.getSeconds().toString()
+	  seconds = addLeadingZero(seconds)
+	  timestamp += seconds;
+  
+	  return timestamp
+	}
+	
+	function addLeadingZero(units) {
+		if (units.length < 2) {
+			units = "0" + units
+		}
+		return units
+	}
+</script>
+  
+</body>
